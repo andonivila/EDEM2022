@@ -7,7 +7,7 @@ Mis virtudes son la pasión con la que me embarco en mis proyectos y una curiosi
 
 Tengo especial interés en el mundo de la tecnología y el marketing digital
 
-⬇⬇ 
+
 Este es mi perfil de Linkedin
 https://www.linkedin.com/in/antoniovilasastre/
 
