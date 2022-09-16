@@ -8,4 +8,3 @@ root@183a3b0ef2cb:/# . script.sh
 Hola que tal?
 root@183a3b0ef2cb:/#
 
-TODO MAAAAAAAAAAAAAALLLL
