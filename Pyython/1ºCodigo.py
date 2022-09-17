@@ -34,7 +34,7 @@ print (f'Casado? {casado}')
 Lista
 '''
 
-miLista :[str] =['Martin', 'Juan' , 'Pablo']
+miLista  =['Martin', 'Juan' , 'Pablo']
 '''
 el * te permite imprimir tan solo los elementos de la lista
 '''
