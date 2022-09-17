@@ -1,2 +1,11 @@
-ListaCompra = ['Tomate', 'Patatas', 'Huevos', 'Pescado']
-print = (ListaCompra)
+'''
+Rango
+
+'''
+
+miRango = range (0,10000000,2)
+
+print(*miRango)
+
+
+
