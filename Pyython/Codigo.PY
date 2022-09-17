@@ -1,3 +1,6 @@
-#Esto es un comentario
-
+'''
+Esto es un comentario
+Especialmente largo
+'''
 print("Hola Mundo")
+
