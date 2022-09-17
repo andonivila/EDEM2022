@@ -13,5 +13,5 @@ Películas vistas (diccionario con clave y valor. El valor será el título de l
 
 '''
 
-numero=3
-print = (f"Hola Juan tu numero de usuario es {numero}")
+print("hola")
+
