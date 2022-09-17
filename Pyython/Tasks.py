@@ -12,4 +12,6 @@ Lista de amigos
 Películas vistas (diccionario con clave y valor. El valor será el título de la película)
 
 '''
-nombre=int("¿Cual es tu nombre?")
+
+numero=3
+print = (f"Hola Juan tu numero de usuario es {numero}")
