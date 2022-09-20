@@ -1,11 +1,9 @@
-
-from pprint import pprint
-
-Calle_13 = {'Nombre':'Calle 13', 'Artista':'Calle 13', 'Año' :'2005', 'Precio':'20','Genero':'Reggaeton'}
-
-numero = int (input("Escribe un numero   "))
-
-if numero == 1 :
-    pprint (Calle_13)
-elif numero == 2 :
-    print ("Hola")
+from datetime import date 
+  
+todays_date = date.today() 
+  
+print("Current date: ", todays_date) 
+  
+print("Current year:", todays_date.year) 
+print("Current month:", todays_date.month) 
+print("Current day:", todays_date.day)
