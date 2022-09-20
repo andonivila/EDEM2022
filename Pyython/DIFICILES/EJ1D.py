@@ -15,6 +15,7 @@ Black Metal
 '''
 
 from pprint import pprint
+from datetime import date 
 
 
 
@@ -22,9 +23,9 @@ Faith_in_the_future = {'Nombre':'Faith in the future', 'Artista':'Louis Tomlinso
 
 Parklife ={'Nombre':'Parklife', 'Artista':'Blur', 'Año' :'1994', 'Precio':'7.99','Genero':'Pop'}
 
-Random_access_memories = {'Nombre':'Random Access Memories', 'Artista':'Daft Punk', 'Año' :'2013', 'Precio':'11.99','Genero':'Electro'}
+Random_access_memories = {'Nombre':'Random Access Memories', 'Artista':'Daft Punk', 'Año' :'2013', 'Precio':'12','Genero':'Electro'}
 
-Kid_A= {'Nombre':'Kid A', 'Artista':'Radio Head', 'Año' :'2000', 'Precio':'','Genero':'Electro'}
+Kid_A = {'Nombre':'Kid A', 'Artista':'Radio Head', 'Año' :'2000', 'Precio':'20','Genero':'Electro'}
 
 Calle_13 = {'Nombre':'Calle 13', 'Artista':'Calle 13', 'Año' :'2005', 'Precio':'20','Genero':'Reggaeton'}
 
@@ -42,7 +43,7 @@ Spiritual_Healing = {'Nombre':'Spiritual Healing', 'Artista':'Death ', 'Año' :'
 
 Human = {'Nombre':'Human', 'Artista':'Death', 'Año' :'1991', 'Precio':'21','Genero':'Death Metal'}
 
-Black_Metal={'Nombre':'Black Metal', 'Artista':'Venom', 'Año' :'1982', 'Precio':'7.99','Genero':'Black Metal'}
+Black_Metal={'Nombre':'Black Metal', 'Artista':'Venom', 'Año' :'1982', 'Precio':'8','Genero':'Black Metal'}
 
 Dark_Medieval_Times={'Nombre':'Dark Medieval Times', 'Artista':'Satyricon ', 'Año' :'1993', 'Precio':'16','Genero':'Black Metal'}
 
@@ -52,38 +53,102 @@ input ("Bienvendio usuario, pulsa la tecla enter para acceder a nuestro catalogo
 
 print ("Hola! esta es la lista de discos disponibles :\n\n")
 
-print ('Faith in the future of Louis Tomlinson  \n\nParklife of Blur \n\nRandom Access Memories of Daft Punk \n\nKid A of Radio Head \n\nCalle 13 of Calle 13 \n\nEl Abayarde of Tego Calderon \n\nNervermind of Nirvana \n\nThe Dark Side of the Moon of Pink Floyd \n\nRide The Lightning of Metallica \n\nThe number of the beast of Iron Maiden \n\nSpiritual Healing of Death \n\nHuman of Death \n\nBlack Metal of Venom \n\nDark Medieval Times of Satyricon\n\n')
-
+print ('1º Faith in the future of Louis Tomlinson  \n\n2º Parklife of Blur \n\n3º Random Access Memories of Daft Punk \n\n4º Kid A of Radio Head \n\n5º Calle 13 of Calle 13 \n\n6º El Abayarde of Tego Calderon \n\n7º Nervermind of Nirvana \n\n8º The Dark Side of the Moon of Pink Floyd \n\n9º Ride The Lightning of Metallica \n\n10º The number of the beast of Iron Maiden \n\n11º Spiritual Healing of Death \n\n12º Human of Death \n\n13º Black Metal of Venom \n\n14º Dark Medieval Times of Satyricon\n\n')
 
 numero = int (input("Selecciona del 1 al 14 disco que desea comprar  "))
 
 if numero == 1 :
     pprint (Faith_in_the_future)
+    seleccion=Faith_in_the_future
+    nombre=Faith_in_the_future ['Nombre']
 elif numero == 2 :
-    print (Parklife)
+    pprint (Parklife)
+    seleccion = Parklife
+    nombre=Parklife['Nombre']
 elif numero == 3 :
-    print (Random_access_memories)
-    print ("descuento")
+    pprint (Random_access_memories)
+    print (f'\n\nEste genero tiene un 30% de descuento, el precio ahora es de 8,40€')
+    Random_access_memories = {** Random_access_memories, 'Precio': '8.40'}
+    seleccion = Random_access_memories
+    nombre=Random_access_memories['Nombre']
 elif numero == 4 :
-    print (Kid_A)
+    pprint (Kid_A)
+    print (f'\n\nEste genero tiene un 30% de descuento, el precio ahora es de 14€')
+    seleccion=(Kid_A)
+    nombre=Kid_A['Nombre']
 elif numero == 5 :
-    print (Calle_13)
+    pprint (Calle_13)
+    seleccion=Calle_13
+    nombre =Calle_13 ['Nombre']
 elif numero == 6 :
-    print (El_Abayarde)
+    pprint (El_Abayarde)
+    seleccion= El_Abayarde
+    nombre = El_Abayarde ['Nombre']
 elif numero == 7  :
-    print (Nevermind)
+    pprint (Nevermind)
+    seleccion = Nevermind
+    nombre = Nevermind ['Nombre']
 elif numero == 8 :
-    print (The_Dark_Side_of_the_Moon)
+    pprint (The_Dark_Side_of_the_Moon)
+    seleccion =The_Dark_Side_of_the_Moon
+    nombre= The_Dark_Side_of_the_Moon ['Nombre']
 elif numero == 9 :
-    print (Ride_the_Lightning)
+    pprint (Ride_the_Lightning)
+    seleccion = Ride_the_Lightning
+    nombre= Ride_the_Lightning['Nombre']
 elif numero == 10 :
-    print (The_Number_of_the_Beast)
+    pprint (The_Number_of_the_Beast)
+    seleccion= The_Number_of_the_Beast
+    nombre=The_Number_of_the_Beast ['Nombre']
 elif numero == 11 :
-    print (Spiritual_Healing)
+    pprint (Spiritual_Healing)
+    seleccion=Spiritual_Healing
+    nombre = Spiritual_Healing ['Nombre']
 elif numero == 12 :
-    print (Human)
+    pprint (Human)
+    seleccion=Human
+    nombre=Human ['Nombre']
 elif numero == 13 :
-    print (Black_Metal)
+    pprint (Black_Metal)
+    seleccion=Black_Metal
+    nombre=Black_Metal['Nombre']
+    print (f'\n\nEste genero tiene un 30% de descuento, el precio ahora es de 5.60')
+
 elif numero == 14 :
-    print (Dark_Medieval_Times)
+    pprint (Dark_Medieval_Times)
+    seleccion=Dark_Medieval_Times
+    nombre=Dark_Medieval_Times['Nombre']
+    Dark_Medieval_Times = {** Dark_Medieval_Times, 'Precio': '11,20€'}
+    print (f'\n\nEste genero tiene un 30% de descuento, el precio ahora es de 11,20€')
+
+
+
+nnumero=int(input(f'\n \n Ha escogido {nombre} pulsa la tecla 0 para generar el ticket '))
+
+if nnumero == 0:
+    print (f"\n\n Muchas gracias por tu compra\n\n") 
+    hoy = date.today()
+    print (f"Fecha de compra {hoy} ")
+    
+    print(r"""      
+ ___________________________________________
+|  _______________________________________  |
+| / .-----------------------------------. \ |
+| | | /\ :                        90 min| | |
+| | |/--\:....................... NR [ ]| | |
+| | `-----------------------------------' | |
+| |      //-\\   |         |   //-\\      | |
+| |     ||( )||  |_________|  ||( )||     | |
+| |      \\-//   :....:....:   \\-//      | |
+| |       _ _ ._  _ _ .__|_ _.._  _       | |
+| |      (_(_)| |(_(/_|  |_(_||_)(/_      | |
+| |                           |           | |
+| `______ ____________________ ____ ______' |
+|        /    []             []    \        |
+|       /  ()              Anto ()  \       |
+!______/_____________________________\______!  
+
+
+""")
+
 
