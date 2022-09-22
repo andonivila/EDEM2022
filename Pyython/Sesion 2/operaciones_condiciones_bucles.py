@@ -92,11 +92,16 @@ AA= suma (1,2)
 
 print (AA)
 
+While haz el ejercicio
+
+-With
+-yield
+
+-True
+-False
+-None 
+
+"Lorem ipsum"
+
 '''
 
-def suma (a,b) :
-    return a+b
-
-AA= suma (1,2)
-
-print (AA)
