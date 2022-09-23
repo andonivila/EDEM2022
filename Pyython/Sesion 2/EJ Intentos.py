@@ -1,24 +1,29 @@
+numero_elegido = int(input("Escoge un numero: ")) 
+numero_secreto=300
+
+numero_intentos=3
 
 
 
-numeroElegido=int(input("Elige un número: "))
-numeroBuscado = 300
-intentos = 3
+while numero_elegido != numero_secreto and numero_intentos>1:
+    if numero_elegido<numero_secreto:
+        print ("El numero secreto es más grande")
+        numero_intentos=numero_intentos-1 
+        print (f"Te quedan {numero_intentos} intentos")
+        numero_elegido = int(input("Escoge un numero: "))
 
-
-
-while(numeroElegido != numeroBuscado):
-    if(numeroElegido > numeroBuscado):
-        numeroElegido = int(input("Has fallado, el número buscado es más pequeño: "))  
-        print (intentos)
-        intentos = intentos-1
-       
     else:
-        numeroElegido = int(input("Has fallado, el número buscado es más grande: "))
+        print ("El numero secreto es mas pequeño")
+        numero_intentos=numero_intentos-1
+        print (f"Te quedan {numero_intentos} intentos")
+        numero_elegido = int(input("Escoge un numero: ")) 
 
 
+if numero_elegido == numero_secreto:
+    print (f"Perfecto el numero era el {numero_secreto}")
+    
 
-print(f"Has ganado, el número era {numeroBuscado}")
+
 
 
 
