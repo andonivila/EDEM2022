@@ -1,8 +1,5 @@
-#anio=int(input("Pon un año "))
-from multiprocessing.resource_sharer import stop
+anio=int(input("Pon un año "))
 
-
-anio=2000
 def bisiesto (a) :
      a=anio%4
      b=anio%100
