@@ -1,14 +1,12 @@
-lstdict = []
-
-a=input("Nombre ")
-
-b=int(input('dime DNI '))
-
-lstdict.append({'Esto':a ,'DNI':b})
+from os import remove
 
 
-z=int(input("XXX "))
-
-print(next((x for x in lstdict if x["DNI"] == z), None))
+dic = [{'Prueba':'1'},{'Prueba':22}]
 
 
+bus_dni=int(input("Cual es el DNI "))
+donde_dni=(next((x for x in dic if x['Prueba'] == bus_dni), None))
+
+dic.remove(donde_dni)
+
+print(dic)
